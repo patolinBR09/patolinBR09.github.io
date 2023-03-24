@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        #myVideo {
+              position: fixed;
+              right: 0;
+              bottom: 0;
+              min-width: 100%;
+              min-height: 100%;
+        }
+
+        .container {
+            width: 400px;
+            height: 300px;
+            background-color: rgba(255, 255, 255, 0.5);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin-top: 0;
+            text-align: center;
+            color: #555;
+        }
+
+        label {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 2px solid #ddd;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            font-size: 18px;
+            background-color: #3b7dd8;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #337cd8;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            font-size: 12px;
+            padding: 5px;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+      <source src="C:\Users\patol\OneDrive\Escritorio\test pyhton\y2mate.com - 五等分のカタチMusic Video Full size 歌中野家の五つ子_v720P.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <h1>Go Toubun No Hanayome</h1>
+        
+        <form action="file:///C:/Users/patol/OneDrive/Escritorio/test%20pyhton/pagina.html" method="get">
+            <label for="username">Usuario</label>
+            <input type="text" id="username" name="username" placeholder="Ingresa tu usuario" reqired>
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+    </div>
+    
+    <footer>&copy; 2023 patolinoBR</footer>
+</body>
+</html>
